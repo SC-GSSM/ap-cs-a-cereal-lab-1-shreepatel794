@@ -20,7 +20,7 @@ public class Cereal
         this.name = name;
         this.calories = calories;
         this.fiber = fiber;
-        this.carbs = carbs;
+        this.carbohydrates = carbs;
         this.cups = cups;
     }
     // accessor methods for each instance variable
@@ -37,7 +37,7 @@ public class Cereal
     }
 
     public double getCarbs() {
-        return carbs;
+        return carbohydrates;
     }
 
     public int getCups() {
@@ -47,7 +47,7 @@ public class Cereal
     /* toString method returns the values stored in the instance variables
        concatenated in a sentence starting with "Cereal: " */
        public String toString() {
-        return "Cereal: " + name + " " + calories + " " + fiber + " " + carbs + " " + cups;
+        return "Cereal: " + name + " " + calories + " " + fiber + " " + carbohydrates + " " + cups;
     }
 
 }
