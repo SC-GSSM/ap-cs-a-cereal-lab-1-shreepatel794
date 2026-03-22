@@ -31,11 +31,10 @@ public class CerealRunner
                 // go through each String array element and save it
                 //   into the appropriate variable which will be used to
                 //   create a Cereal object
-                 String name = data[0];
-                int calories = Integer.parseInt(data[1]);
+               double calories = Double.parseDouble(data[1]);
                 double fiber = Double.parseDouble(data[2]);
                 double carbs = Double.parseDouble(data[3]);
-                int cups = Integer.parseInt(data[4]);
+                double cups = Double.parseDouble(data[4]);
 
                 // create a new Cereal object, and add it to the ArrayList
                   Cereal cereal = new Cereal(name, calories, fiber, carbs, cups);
