@@ -19,10 +19,7 @@ public class CerealRunner
         {
             FileReader fileRdr = new FileReader(fileName);
             Scanner scan = new Scanner(fileRdr);
-            if (scan.hasNextLine()) { 
-            scan.nextLine(); 
-}
-            while(scan.hasNext())
+            while(scan.hasNextLine())
             {
                 String myStr = scan.nextLine();
 
