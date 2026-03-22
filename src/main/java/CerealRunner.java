@@ -19,6 +19,9 @@ public class CerealRunner
         {
             FileReader fileRdr = new FileReader(fileName);
             Scanner scan = new Scanner(fileRdr);
+            if (scan.hasNextLine()) { 
+            scan.nextLine(); 
+}
             while(scan.hasNext())
             {
                 String myStr = scan.nextLine();
@@ -31,6 +34,7 @@ public class CerealRunner
                 // go through each String array element and save it
                 //   into the appropriate variable which will be used to
                 //   create a Cereal object
+                String name = data[0];
                double calories = Double.parseDouble(data[1]);
                 double fiber = Double.parseDouble(data[2]);
                 double carbs = Double.parseDouble(data[3]);

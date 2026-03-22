@@ -16,11 +16,11 @@ public class Cereal
     private double cups;
 
     // constructor that creates a cereal object
-        public Cereal(String name, double calories, double fiber, double carbs, double cups) {
+  public Cereal(String name, double calories, double fiber, double carbs, double cups) {
     this.name = name;
     this.calories = calories;
     this.fiber = fiber;
-    this.carbs = carbs;
+    this.carbohydrates = carbs; 
     this.cups = cups;
     }
     // accessor methods for each instance variable
